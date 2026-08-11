@@ -78,6 +78,9 @@ jobs:
       - name: Train Decision Tree and Random Forest
         if: steps.dataset.outputs.available == 'true'
         run: python scripts/train.py --data data/employee_data.csv --output outputs
+        
+      - name: EDA
+        run: python scripts/eda.py --data data/employee_data.csv
 
       - name: Upload model outputs
         if: steps.dataset.outputs.available == 'true'
