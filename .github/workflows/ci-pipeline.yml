@@ -2,9 +2,9 @@ name: Employee Churn CI
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: ["main", "master","feature1"]
   pull_request:
-    branches: ["main", "master"]
+    branches: ["main", "master","feature1"]
 
 permissions:
   contents: read
