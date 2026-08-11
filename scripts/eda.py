@@ -13,11 +13,8 @@ def main():
     print(df.head())
     print("\nShape:", df.shape)
     print("\nMissing values:\n", df.isna().sum())
-    print("\nTarget distribution:\n", df["quit"].value_counts())
-    print("\nShape:", df.shape)
-    print("\nMissing values:\n", df.isna().sum())
-    print("\nTarget distribution:\n", df["quit"].value_counts())
-
+    print("\nTarget distribution:\n", df["quit"].value_counts()
+    
     for column in ("salary", "department"):
         if column in df.columns:
             path = plot_turnover_by_column(df, column, args.output)
