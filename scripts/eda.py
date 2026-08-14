@@ -7,7 +7,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run employee churn EDA.")
     parser.add_argument("--data", default="data/employee_data.csv")
     parser.add_argument("--output", default="outputs")
-    args = parser.parse_args()
+    args = parser.parse_args()k
 
     df = load_data(args.data)
     print(df.head())
